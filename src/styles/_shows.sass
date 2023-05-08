@@ -10,6 +10,9 @@
     grid-template-columns: 1fr 1fr 1fr
     gap: 24px
 
+    @media (max-width: 768px)
+      grid-template-columns: 1fr 1fr 
+
     &--is-active
       display: grid
 
@@ -22,6 +25,11 @@
     display: flex
     justify-content: center
 
+    @media (max-width: 768px)
+      white-space: nowrap
+      overflow-x: scroll
+      padding-left: 20px
+
     &__button
       border: none
       cursor: pointer
@@ -32,6 +40,9 @@
       background: none
       text-transform: uppercase
       margin: 0 1vw
+
+      @media (max-width: 768px)
+        font-size: 16px
 
       &--is-active
         border-bottom: 5px solid variaveis.$corTextoSecundario
